@@ -5,8 +5,8 @@
  */
 function add_custom_scripts() {
 
-  //wp_enqueue_style('styles', get_template_directory_uri() . '/your css file');
-  //wp_enqueue_script('scripts', get_template_directory_uri() . '/your javascript file');
+  wp_enqueue_style('styles', get_template_directory_uri() . '/css/style.css');
+  wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js');
 
 }
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
