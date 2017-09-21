@@ -11,9 +11,9 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header>
+    <header id="header">
       <!-- Header content -->
-      <h1><?php bloginfo();?></h1>
+      <h1><a href="/"><?php bloginfo();?></a></h1>
       <div><?php bloginfo('description') ?></div>
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'header-menu' ) ); ?>
     </header>
